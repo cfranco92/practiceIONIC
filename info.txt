@@ -1,0 +1,13 @@
+Instalación y overview de Ionic CLI
+-----------------------------------------------------------------------------
+Ionic CLI nos ayuda con la creación de nuevos proyectos de manera 
+rápida y ordenada. Con Ionic CLI también podemos crear nuevos componentes.
+ Nos permite correr la aplicación localmente desde el navegador para 
+ facilitar el proceso de desarrollo. Preparar las aplicaciones para 
+ ambientes de producción, es decir compilar la aplicación para hacerla nativa.
+
+
+ Crear una aplicación
+ -----------------------------------------------------------------------------
+  $ionic start --help
+  
