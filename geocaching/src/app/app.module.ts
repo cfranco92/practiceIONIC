@@ -6,20 +6,25 @@ import { StatusBar } from '@ionic-native/status-bar';
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
+import { LugarPage } from '../pages/lugar/lugar';
 
 @NgModule({
+  // Declaramos las vistas en la app
   declarations: [
     MyApp,
-    HomePage
+    HomePage,
+    LugarPage
   ],
   imports: [
     BrowserModule,
     IonicModule.forRoot(MyApp)
   ],
   bootstrap: [IonicApp],
+  // Le decimos a IONIC que las cargue desde un principio
   entryComponents: [
     MyApp,
-    HomePage
+    HomePage,
+    LugarPage  
   ],
   providers: [
     StatusBar,
