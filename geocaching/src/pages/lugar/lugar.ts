@@ -22,4 +22,9 @@ export class LugarPage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad LugarPage');
   }
+
+  // Navegación hacia atrás
+  navigateBack() {
+    this.navCtrl.pop();
+  }
 }
