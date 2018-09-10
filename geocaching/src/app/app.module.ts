@@ -1,3 +1,4 @@
+import { TerceraPage } from './../pages/tercera/tercera';
 import { AboutPage } from './../pages/about/about';
 import { TabsPage } from './../pages/tabs/tabs';
 import { BrowserModule } from '@angular/platform-browser';
@@ -19,7 +20,8 @@ import { PerfilPage } from '../pages/perfil/perfil';
     LugarPage,
     PerfilPage,
     TabsPage,
-    AboutPage
+    AboutPage,
+    TerceraPage
   ],
   imports: [
     BrowserModule,
@@ -33,7 +35,8 @@ import { PerfilPage } from '../pages/perfil/perfil';
     LugarPage,
     PerfilPage,
     TabsPage,
-    AboutPage
+    AboutPage,
+    TerceraPage
   ],
   providers: [
     StatusBar,

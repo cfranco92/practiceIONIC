@@ -1,3 +1,4 @@
+import { TerceraPage } from './../tercera/tercera';
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
@@ -26,5 +27,9 @@ export class LugarPage {
   // Navegación hacia atrás
   navigateBack() {
     this.navCtrl.pop();
+  }
+
+  navigateToThird() {
+    this.navCtrl.push(TerceraPage);
   }
 }
