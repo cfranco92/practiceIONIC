@@ -12,8 +12,8 @@ export class HomePage {
 
   }
 
-  navegarALugar(){
-    this.navCtrl.push(LugarPage); // Agrega una vista al stack de navegación
+  navegarALugar(name){
+    this.navCtrl.push(LugarPage, {nombre: name}); // Agrega una vista al stack de navegación
   }
 
 }
