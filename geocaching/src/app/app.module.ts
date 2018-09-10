@@ -1,3 +1,4 @@
+import { AboutPage } from './../pages/about/about';
 import { TabsPage } from './../pages/tabs/tabs';
 import { BrowserModule } from '@angular/platform-browser';
 import { ErrorHandler, NgModule } from '@angular/core';
@@ -17,7 +18,8 @@ import { PerfilPage } from '../pages/perfil/perfil';
     HomePage,
     LugarPage,
     PerfilPage,
-    TabsPage
+    TabsPage,
+    AboutPage
   ],
   imports: [
     BrowserModule,
@@ -30,7 +32,8 @@ import { PerfilPage } from '../pages/perfil/perfil';
     HomePage,
     LugarPage,
     PerfilPage,
-    TabsPage 
+    TabsPage,
+    AboutPage
   ],
   providers: [
     StatusBar,
