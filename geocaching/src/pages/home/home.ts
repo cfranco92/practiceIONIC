@@ -20,7 +20,9 @@ export class HomePage {
     this.navCtrl.push(LugarPage, {nombre: name}); // Agrega una vista al stack de navegación
   }
   irAVistaDeDetalle() {
-    alert('Está funcionando')
+    this.navCtrl.push(LugarPage, {lugar: {}})
   }
-
+  irAVistaDeDetalleExistente(lugar) {
+    this.navCtrl.push(LugarPage, {lugar: lugar});
+  }
 }

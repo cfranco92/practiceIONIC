@@ -15,21 +15,8 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'lugar.html',
 })
 export class LugarPage {
-  nombreLugar: string = '';
+  lugar: string = '';
   constructor(public navCtrl: NavController, public navParams: NavParams) {
-    this.nombreLugar = navParams.get('nombre')
-  }
-
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad LugarPage');
-  }
-
-  // Navegación hacia atrás
-  navigateBack() {
-    this.navCtrl.pop();
-  }
-
-  navigateToThird() {
-    this.navCtrl.push(TerceraPage);
+    this.lugar = navParams.get('lugar')
   }
 }
