@@ -36,3 +36,7 @@ Creando un nuevo page
 ----------------------------------------------------------------------------------------
 $ionic generate --help
 $ionic generate [nameOfPage]
+
+
+// Problemar al leer lista dinámica con firebase
+npm install rxjs@6 rxjs-compat@6 --save
