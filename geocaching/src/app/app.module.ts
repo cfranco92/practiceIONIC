@@ -1,3 +1,4 @@
+import { LugaresService } from './../services/lugares.service';
 import { TerceraPage } from './../pages/tercera/tercera';
 import { AboutPage } from './../pages/about/about';
 import { TabsPage } from './../pages/tabs/tabs';
@@ -61,7 +62,8 @@ export const firebaseConfig = {
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    LugaresService
   ]
 })
 export class AppModule {}

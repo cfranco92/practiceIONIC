@@ -1,3 +1,4 @@
+import { LugaresService } from './../../services/lugares.service';
 import { TerceraPage } from './../tercera/tercera';
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
@@ -15,8 +16,14 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'lugar.html',
 })
 export class LugarPage {
-  lugar: string = '';
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
-    this.lugar = navParams.get('lugar')
+  lugar: any = {};
+  constructor(public navCtrl: NavController, public navParams: NavParams,
+    public lugaresServices: LugaresService) {
+    this.lugar = navParams.get('lugar') || {};
+  }
+  guardarLugar() {
+    this.lugar.id = Date.now();
+    this.lugaresServices.createLugar(this.lugar);
+    console.log(this.lugar);
   }
 }
