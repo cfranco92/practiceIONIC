@@ -26,4 +26,12 @@ export class HomePage {
   irAVistaDeDetalleExistente(lugar) {
     this.navCtrl.push(LugarPage, {lugar: lugar});
   }
+  deleteLugar(lugar) {
+    if(confirm('Seguro que desea borrar este lugar?')) {
+      this.lugaresService.deletePlace(lugar)
+      .then( ()=> {
+        alert('Lugar eliminado correctamente');
+      });
+    }    
+  }
 }
