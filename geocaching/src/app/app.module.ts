@@ -12,6 +12,22 @@ import { HomePage } from '../pages/home/home';
 import { LugarPage } from '../pages/lugar/lugar';
 import { PerfilPage } from '../pages/perfil/perfil';
 
+// Imports Firebase auth, DatabaseModule, Module
+import { AngularFireAuthModule } from 'angularfire2/auth';
+import { AngularFireDatabaseModule } from 'angularfire2/database';
+import { AngularFireModule } from 'angularfire2';
+
+
+// Firebase Config
+export const firebaseConfig = {
+  apiKey: "AIzaSyAPJR_dNQGQEXbyIaJ_VCnmIjKOVNjiTa8",
+  authDomain: "ionicgeocaching-f86a3.firebaseapp.com",
+  databaseURL: "https://ionicgeocaching-f86a3.firebaseio.com",
+  projectId: "ionicgeocaching-f86a3",
+  storageBucket: "ionicgeocaching-f86a3.appspot.com",
+  messagingSenderId: "308626007077"
+};
+
 @NgModule({
   // Declaramos las vistas en la app
   declarations: [
@@ -25,7 +41,11 @@ import { PerfilPage } from '../pages/perfil/perfil';
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp),
+    AngularFireModule.initializeApp(firebaseConfig),
+    AngularFireDatabaseModule,
+    AngularFireAuthModule
+
   ],
   bootstrap: [IonicApp],
   // Le decimos a IONIC que las cargue desde un principio
