@@ -1,3 +1,5 @@
+import { AuthService } from './../services/auth.service';
+import { LoginPage } from './../pages/login/login';
 import { LugaresService } from './../services/lugares.service';
 import { TerceraPage } from './../pages/tercera/tercera';
 import { AboutPage } from './../pages/about/about';
@@ -38,7 +40,8 @@ export const firebaseConfig = {
     PerfilPage,
     TabsPage,
     AboutPage,
-    TerceraPage
+    TerceraPage,
+    LoginPage
   ],
   imports: [
     BrowserModule,
@@ -57,13 +60,15 @@ export const firebaseConfig = {
     PerfilPage,
     TabsPage,
     AboutPage,
-    TerceraPage
+    TerceraPage,
+    LoginPage
   ],
   providers: [
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
-    LugaresService
+    LugaresService,
+    AuthService
   ]
 })
 export class AppModule {}
