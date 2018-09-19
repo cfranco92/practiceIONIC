@@ -14,7 +14,7 @@ export class HomePage {
     this.lugaresService.getLugares().valueChanges()
     .subscribe((lugaresFB) => {
           this.lugares = lugaresFB;
-        })
+        })        
   }
 
   navegarALugar(name){
